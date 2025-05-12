@@ -1,0 +1,64 @@
+/* Common Styles for Visualizer */
+#visualizer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 400px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+/* Bar Styles (Common for all sorts) */
+.bar {
+  text-align: center;
+  color: white;
+  font-size: 14px;
+  line-height: 20px;
+  border-radius: 3px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  background-color: skyblue;
+  margin: 2px;
+  display: inline-block;
+}
+
+/* Highlight for active comparisons */
+.bar.highlight {
+  background-color: orange;
+}
+
+/* Sorted Bar (Final State) */
+.bar.sorted {
+  background-color: green;
+}
+
+/* Bar not found (Binary/Linear Search) */
+.bar.not-found {
+  background-color: red;
+}
+
+/* Search Specific Styling (Binary & Linear) */
+.bar.found {
+  background-color: limegreen;
+}
+
+/* Button Styles (for Consistency) */
+button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Input Styles */
+input {
+  padding: 8px 10px;
+  font-size: 16px;
+  margin: 5px;
+}
